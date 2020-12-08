@@ -12,4 +12,5 @@ with open("./input_data.txt", "r") as input_file:
 
 _input = [int(i) for i in input_data.split("\n")]
 i, j, k = sum_of_triple(_input, 2020)
+
 print(i*j*k)

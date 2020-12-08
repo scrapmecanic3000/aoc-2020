@@ -3,7 +3,7 @@ def sum_of_pair(_input, _sum):
         for j in _input:
             if i == j:
                 continue
-            if i + j == _sum:
+            elif i + j == _sum:
                 return i, j
 
 
