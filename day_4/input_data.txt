@@ -743,7 +743,7 @@ cid:101 eyr:2016 pid:190078757 hgt:188in
 cid:188
 ecl:blu pid:075499609
 byr:1970
-hcl:#fffffd hgt:164cm eyr:2028 iyr:2015 
+hcl:#fffffd hgt:164cm eyr:2028 iyr:2015
 
 byr:2011 hcl:z
 ecl:gry
