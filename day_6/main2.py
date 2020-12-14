@@ -1,19 +1,14 @@
   
-def unique(arr): 
-    x = set(arr)
-    return list(x)
+def everyone(arr):
+    for i in arr:
+    x = np.array(arr) 
+    return np.unique(x)
 
 def prepare_data(data):
     data = data.split("\n\n")
     data = [i.split("\n") for i in data]
     
     return data
-
-def group_answers(group):
-    result = []
-    
-    for i in group:
-        result += i
     
     return list(unique(result))
 
