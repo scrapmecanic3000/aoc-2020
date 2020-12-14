@@ -1,4 +1,3 @@
-
 calculate_id = lambda i: i[0] * 8 + i[1]
 
 def prepare_data(data):
@@ -40,6 +39,19 @@ rows = [find_place_in_range([0, 127], i[0]) for i in boarind_passes]
 columns = [find_place_in_range([0, 7], i[1]) for i in boarind_passes]
 rw_n_cl = list(zip(rows, columns))
 
-ids = [calculate_id(i) for i in rw_n_cl]
-print(max(ids))
+seats = [[0 for j in range(8)] for i in range(128)]
+
+for i in rw_n_cl:
+    seats[i[0]][i[1]] = 1
+
+
+my_id = 0
+
+for i in range(len(seats)):
+    for j in range(len(seats[i])):
+        if seats[i][j] == 0 and seats[i] != [0, 0, 0, 0, 0, 0, 0, 0]:
+            my_id = calculate_id((i,j))
+
+
+print(my_id)
 
